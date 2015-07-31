@@ -1,0 +1,21 @@
+<html ng-app="myApp">
+<head>
+    <script src="js/angular.min.js"></script>
+
+</head>
+<body>
+<div ng-controller="myctrlr">
+
+    <table>
+        <tr>
+
+            <td>Name:<input type="text" ng-model="user.name" name="name" />
+                Designation: <input type="text" ng-model="user.designation" name="designation" />
+            <td><input type="submit" value="submit" ng-click="save(user)"/></td></tr>
+    </table>
+
+</div>
+
+<script src="js/controllers/listController.js"></script>
+</body>
+</html>

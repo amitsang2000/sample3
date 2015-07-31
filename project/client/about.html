@@ -1,0 +1,45 @@
+<!Doctype html>
+<html ng-app="myApp">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+
+
+    <!--<script>-->
+    <!--var myApp = angular.module('myApp', []);-->
+    <!--myApp.controller('myctrlr', function($scope, $http) {-->
+
+
+
+        <!--$http.get("http://localhost:1002/Listcontacts")-->
+                <!--.success(function(response) {-->
+                    <!--$scope.data = response;-->
+
+                <!--});-->
+    <!--});-->
+    <!--</script>-->
+</head>
+<body>
+<div  ng-controller="myctrlr">
+
+    <div >
+
+        <table border="1px" >
+            <TR>
+
+                <th>NAME</th>
+                <TH>DESIGNATION</TH>
+            </TR>
+
+            <tr ng-repeat="total in data">
+
+                <td>{{ total.name }}</td> <td>{{total.email}}</td>
+            </tr>
+
+        </table>
+
+    </div>
+    </div>
+    <script src="js/controllers/userscontroller.js"></script>
+
+</body>
